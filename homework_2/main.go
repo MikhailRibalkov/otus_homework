@@ -1,52 +1,57 @@
 package main
 
-import (
-	"fmt"
+import "fmt"
+
+const (
+	COUNT_SUMS = 28
 )
 
-func isLucky(ticket []int) int {
-	max_number := ticket
+var sums = make([]int, COUNT_SUMS)
 
-	var sum1 int = 0
-	var sum2 int = 0
-	len_number := len(max_number)
-	for i := 0; i < len_number/2; i++ {
-		sum1 += max_number[i]
-		sum2 += max_number[len_number-1-i]
+// инициализируем массив сумм
+func initSums() {
+	for i := 0; i < COUNT_SUMS; i++ {
+		sums[i] = 0
 	}
-
-	if sum1 != sum2 {
-		return 0
-	}
-	return 1
 }
 
-func lucky_count(ticket int, len int) int {
-	if ticket == 0 {
-		return 1
-	}
+// обрабатываем трехзначное число
+func performNumber(number int) {
+	var sum int = 0
+	var value int = number
+	var digit int
 
-	current_ticket := ticket
-	split_ticket := make([]int, 0)
+	digit = value / 100
+	sum += digit
 
-	for i := 0; i < len; i++ {
-		split_ticket = append(split_ticket, current_ticket%10)
-		current_ticket = current_ticket / 10
+	value %= 100
+	digit = value / 10
+	sum += digit
+
+	value %= 10
+	sum += value
+
+	if sum < COUNT_SUMS {
+		sums[sum] += 1
 	}
-	return isLucky(split_ticket) + lucky_count(ticket-1, len)
 }
 
-func lucky_tickets(len_num int) int {
-	max_number := 0
+// вычисляем общее количество счастливых билетов
+func getFullCount() int {
+	var count int = 0
 
-	for i := 0; i < int(len_num); i++ {
-		max_number += max_number*10 + 9
+	for i := 0; i < COUNT_SUMS; i++ {
+		count += sums[i] * sums[i]
 	}
-
-	return lucky_count(max_number, len_num)
+	return count
 }
 
 func main() {
-	tickets_count := lucky_tickets(6)
-	fmt.Println("Lucky tickets count: ", tickets_count)
+	initSums()
+
+	for number := 0; number < 1000; number++ {
+		performNumber(number)
+	}
+
+	fmt.Printf("happy ticket count: %d\n", getFullCount())
 }
