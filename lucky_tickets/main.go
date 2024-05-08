@@ -9,14 +9,14 @@ const (
 var sums = make([]int, COUNT_SUMS)
 
 // инициализируем массив сумм
-func initSums() {
+func InitSums(sum []int) {
 	for i := 0; i < COUNT_SUMS; i++ {
-		sums[i] = 0
+		sum[i] = 0
 	}
 }
 
 // обрабатываем трехзначное число
-func performNumber(number int) {
+func PerformNumber(s []int, number int) {
 	var sum int = 0
 	var value int = number
 	var digit int
@@ -32,26 +32,26 @@ func performNumber(number int) {
 	sum += value
 
 	if sum < COUNT_SUMS {
-		sums[sum] += 1
+		s[sum] += 1
 	}
 }
 
 // вычисляем общее количество счастливых билетов
-func getFullCount() int {
+func GetFullCount(sum []int, count_sums int) int {
 	var count int = 0
 
-	for i := 0; i < COUNT_SUMS; i++ {
-		count += sums[i] * sums[i]
+	for i := 0; i < count_sums; i++ {
+		count += sum[i] * sum[i]
 	}
 	return count
 }
 
 func main() {
-	initSums()
+	InitSums(sums)
 
 	for number := 0; number < 1000; number++ {
-		performNumber(number)
+		PerformNumber(sums, number)
 	}
 
-	fmt.Printf("happy ticket count: %d\n", getFullCount())
+	fmt.Printf("happy ticket count: %d\n", GetFullCount(sums, COUNT_SUMS))
 }
