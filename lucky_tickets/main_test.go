@@ -4,20 +4,13 @@ import (
 	"testing"
 )
 
-func TestLuckyTickets(t *testing.T) {
+func TestLuckyTickets6(t *testing.T) {
 	expected := 55252
-	count_sums := 28
-	sums := make([]int, count_sums)
 
-	InitSums(sums)
+	result := LuckyTickets6()
 
-	for number := 0; number < 1000; number++ {
-		PerformNumber(sums, number)
+	if expected != result {
+		t.Errorf("Ожидалось число 55252, получено %d", result)
 	}
 
-	result := GetFullCount(sums, count_sums)
-
-	if result != expected {
-		t.Errorf("Error: got %d expected %d lucky tickets", result, expected)
-	}
 }

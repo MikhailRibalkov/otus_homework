@@ -1,3 +1,3 @@
-module homework_2
+module lucky_tickets
 
-go 1.22.2
+go 1.22.3
