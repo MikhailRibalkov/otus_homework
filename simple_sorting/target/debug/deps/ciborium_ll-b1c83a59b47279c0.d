@@ -1,0 +1,11 @@
+/Users/mikail/RustProjects/otus_homework/simple_sorting/target/debug/deps/libciborium_ll-b1c83a59b47279c0.rmeta: /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/lib.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/dec.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/enc.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/hdr.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/seg.rs
+
+/Users/mikail/RustProjects/otus_homework/simple_sorting/target/debug/deps/libciborium_ll-b1c83a59b47279c0.rlib: /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/lib.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/dec.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/enc.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/hdr.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/seg.rs
+
+/Users/mikail/RustProjects/otus_homework/simple_sorting/target/debug/deps/ciborium_ll-b1c83a59b47279c0.d: /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/lib.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/dec.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/enc.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/hdr.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/seg.rs
+
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/lib.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/dec.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/enc.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/hdr.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ciborium-ll-0.2.2/src/seg.rs:

@@ -1,0 +1,10 @@
+/Users/mikail/RustProjects/otus_homework/simple_sorting/target/debug/deps/libtinytemplate-f88a44954c0ac463.rmeta: /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/lib.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/compiler.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/error.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/instruction.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/syntax.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/template.rs
+
+/Users/mikail/RustProjects/otus_homework/simple_sorting/target/debug/deps/tinytemplate-f88a44954c0ac463.d: /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/lib.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/compiler.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/error.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/instruction.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/syntax.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/template.rs
+
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/lib.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/compiler.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/error.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/instruction.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/syntax.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tinytemplate-1.2.1/src/template.rs:

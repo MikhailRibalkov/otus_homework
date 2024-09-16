@@ -1,0 +1,1 @@
+/Users/mikail/RustProjects/otus_homework/simple_sorting/target/debug/simple_sorting: /Users/mikail/RustProjects/otus_homework/simple_sorting/src/lib.rs /Users/mikail/RustProjects/otus_homework/simple_sorting/src/main.rs /Users/mikail/RustProjects/otus_homework/simple_sorting/src/sorting.rs

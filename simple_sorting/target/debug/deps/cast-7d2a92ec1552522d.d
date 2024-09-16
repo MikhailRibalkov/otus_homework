@@ -1,0 +1,7 @@
+/Users/mikail/RustProjects/otus_homework/simple_sorting/target/debug/deps/libcast-7d2a92ec1552522d.rmeta: /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cast-0.3.0/src/lib.rs
+
+/Users/mikail/RustProjects/otus_homework/simple_sorting/target/debug/deps/libcast-7d2a92ec1552522d.rlib: /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cast-0.3.0/src/lib.rs
+
+/Users/mikail/RustProjects/otus_homework/simple_sorting/target/debug/deps/cast-7d2a92ec1552522d.d: /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cast-0.3.0/src/lib.rs
+
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cast-0.3.0/src/lib.rs:
