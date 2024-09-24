@@ -25,6 +25,27 @@ impl SortObject {
         }
     }
 
+    pub fn shell_sort(&mut self) {
+        let start = Instant::now();
+        let N = self.arr.len();
+        let mut gap = N / 2;
+
+        while gap > 0 {
+            for j in gap..N {
+                let mut index = j;
+                while index >= gap && self.arr[index - gap] > self.arr[index] {
+                    self.arr.swap(index - gap, index);
+                    index -= gap;
+                }
+            }
+            gap /= 2;
+        }
+
+        self.duration = start.elapsed();
+
+        println!("N: {N}, duration: {:?}", self.duration);
+    }
+
     fn binary_search(&mut self, key: i32, min: i64, max: i64) -> usize {
         if max <= min {
             if key >= self.arr[min as usize] {
