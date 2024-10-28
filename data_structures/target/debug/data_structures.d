@@ -1,0 +1,1 @@
+/Users/mikail/RustProjects/otus_homework/data_structures/target/debug/data_structures: /Users/mikail/RustProjects/otus_homework/data_structures/src/lib.rs /Users/mikail/RustProjects/otus_homework/data_structures/src/main.rs /Users/mikail/RustProjects/otus_homework/data_structures/src/vector_array.rs
