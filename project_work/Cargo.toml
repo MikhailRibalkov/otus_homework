@@ -1,0 +1,23 @@
+[package]
+name = "project_work"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { version = "0.13.1", features = [
+  "canvas",
+  "tokio",
+  "debug",
+  "advanced",
+  "image",
+] }
+plotters = { version = "0.3.7", default-features = false, features = [
+  "chrono",
+  "area_series",
+  "line_series",
+  "point_series",
+] }
+plotters-iced = "0.11.0"
+rand = "0.8.5"
+tokio = { version = "1.43.0", features = ["full"] }
+tokio-macros = { version = "0.2.0-alpha.6" }

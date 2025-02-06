@@ -1,0 +1,11 @@
+/Users/mikail/RustProjects/otus_homework/project_work/target/debug/deps/libiced_glyphon-05f09c34f1bd167d.rmeta: /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/lib.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/cache.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/error.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/text_atlas.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/text_render.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/viewport.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/shader.wgsl
+
+/Users/mikail/RustProjects/otus_homework/project_work/target/debug/deps/iced_glyphon-05f09c34f1bd167d.d: /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/lib.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/cache.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/error.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/text_atlas.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/text_render.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/viewport.rs /Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/shader.wgsl
+
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/lib.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/cache.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/error.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/text_atlas.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/text_render.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/viewport.rs:
+/Users/mikail/.cargo/registry/src/index.crates.io-6f17d22bba15001f/iced_glyphon-0.6.0/src/shader.wgsl:
