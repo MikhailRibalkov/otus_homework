@@ -4,29 +4,29 @@ use std::collections::HashMap;
 // ***** Пример библиотеки "Умный дом" со статическим содержимым
 
 struct Room {
-    devices: Vec<String>,
+    _devices: Vec<String>,
 }
 
 struct SmartHouse {
     /* todo: данные умного дома */
-    rooms: HashMap<String, Room>,
+    _rooms: HashMap<String, Room>,
 }
 
 impl SmartHouse {
     fn new() -> Self {
         Self {
-            rooms: HashMap::new(),
+            _rooms: HashMap::new(),
         }
     }
 
     fn _get_rooms(&self) -> Vec<String> {
         // Размер возвращаемого массива можно выбрать самостоятельно
-        self.rooms.keys().cloned().collect()
+        self._rooms.keys().cloned().collect()
     }
 
     fn _devices(&self, room: &str) -> Vec<String> {
         // Размер возвращаемого массива можно выбрать самостоятельно
-        self.rooms.get(room).unwrap().devices.clone()
+        self._rooms.get(room).unwrap()._devices.clone()
     }
 
     fn create_report(
@@ -40,7 +40,7 @@ impl SmartHouse {
 
 trait DeviceInfoProvider {
     // todo: метод, возвращающий состояние устройства по имени комнаты и имени устройства
-    fn state(&self, room_name: String, device_name: String) -> String;
+    fn _state(&self, room_name: String, device_name: String) -> String;
     fn create_report(&self) -> String;
 }
 
@@ -62,7 +62,7 @@ impl SmartSocket {
         }
     }
 
-    fn switch(&mut self) {
+    fn _switch(&mut self) {
         self.is_on = !self.is_on;
     }
 
@@ -70,7 +70,7 @@ impl SmartSocket {
         self.power
     }
 
-    fn set_name(&mut self, name: String) {
+    fn _set_name(&mut self, name: String) {
         self.name = name;
     }
 }
@@ -86,10 +86,6 @@ impl SmartThermometer {
             name: "SmartTermometer".to_string(),
             temperature: 0.0,
         }
-    }
-
-    fn temperature(&self) -> f32 {
-        self.temperature
     }
 
     fn _set_name(&mut self, name: String) {
@@ -108,7 +104,7 @@ struct BorrowingDeviceInfoProvider<'a, 'b> {
 
 // todo: реализация трейта `DeviceInfoProvider` для поставщиков информации
 impl DeviceInfoProvider for OwningDeviceInfoProvider {
-    fn state(&self, _: String, _: String) -> String {
+    fn _state(&self, _: String, _: String) -> String {
         String::from("")
     }
     fn create_report(&self) -> String {
@@ -122,7 +118,7 @@ impl DeviceInfoProvider for OwningDeviceInfoProvider {
 }
 
 impl DeviceInfoProvider for BorrowingDeviceInfoProvider<'_, '_> {
-    fn state(&self, _: String, _: String) -> String {
+    fn _state(&self, _: String, _: String) -> String {
         String::from("")
     }
     fn create_report(&self) -> String {
