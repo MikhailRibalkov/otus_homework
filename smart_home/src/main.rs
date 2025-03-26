@@ -1,48 +1,6 @@
-use std::collections::HashMap;
 // Метка todo - реализовать самостоятельно
 
 // ***** Пример библиотеки "Умный дом" со статическим содержимым
-
-struct Room {
-    _devices: Vec<String>,
-}
-
-struct SmartHouse {
-    /* todo: данные умного дома */
-    _rooms: HashMap<String, Room>,
-}
-
-impl SmartHouse {
-    fn new() -> Self {
-        Self {
-            _rooms: HashMap::new(),
-        }
-    }
-
-    fn _get_rooms(&self) -> Vec<String> {
-        // Размер возвращаемого массива можно выбрать самостоятельно
-        self._rooms.keys().cloned().collect()
-    }
-
-    fn _devices(&self, room: &str) -> Vec<String> {
-        // Размер возвращаемого массива можно выбрать самостоятельно
-        self._rooms.get(room).unwrap()._devices.clone()
-    }
-
-    fn create_report(
-        &self,
-        /* todo: принять обобщённый тип предоставляющий информацию об устройствах */
-        device_provider: &dyn DeviceInfoProvider,
-    ) -> String {
-        device_provider.create_report()
-    }
-}
-
-trait DeviceInfoProvider {
-    // todo: метод, возвращающий состояние устройства по имени комнаты и имени устройства
-    fn _state(&self, room_name: String, device_name: String) -> String;
-    fn create_report(&self) -> String;
-}
 
 // ***** Пример использования библиотеки умный дом:
 
@@ -121,6 +79,7 @@ impl DeviceInfoProvider for BorrowingDeviceInfoProvider<'_, '_> {
     fn _state(&self, _: String, _: String) -> String {
         String::from("")
     }
+
     fn create_report(&self) -> String {
         format!(
             "Report for {} is {}, power is {}\nfor {}, temperature is {}",
