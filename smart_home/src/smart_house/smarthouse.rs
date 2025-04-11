@@ -1,29 +1,31 @@
 use crate::infoprovider::deviceinfoprovider::DeviceInfoProvider;
 use crate::smart_house::room::Room;
 use std::collections::HashMap;
+
+#[derive(Default)]
 pub struct SmartHouse {
     /* todo: данные умного дома */
-    _rooms: HashMap<String, Room>,
+    rooms: HashMap<String, Room>,
 }
 
 impl SmartHouse {
-    fn new() -> Self {
+    pub fn new() -> Self {
         Self {
-            _rooms: HashMap::new(),
+            rooms: HashMap::new(),
         }
     }
 
     fn _get_rooms(&self) -> Vec<String> {
         // Размер возвращаемого массива можно выбрать самостоятельно
-        self._rooms.keys().cloned().collect()
+        self.rooms.keys().cloned().collect()
     }
 
     fn _devices(&self, room: &str) -> Vec<String> {
         // Размер возвращаемого массива можно выбрать самостоятельно
-        self._rooms.get(room).unwrap().devices.clone()
+        self.rooms.get(room).unwrap().devices.clone()
     }
 
-    fn create_report(
+    pub fn create_report(
         &self,
         /* todo: принять обобщённый тип предоставляющий информацию об устройствах */
         device_provider: &dyn DeviceInfoProvider,

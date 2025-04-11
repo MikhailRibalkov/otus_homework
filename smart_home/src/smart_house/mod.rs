@@ -1,2 +1,2 @@
-mod room;
-mod smarthouse;
+pub mod room;
+pub mod smarthouse;
