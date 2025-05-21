@@ -2,9 +2,9 @@ use std::fmt;
 
 #[derive(PartialEq, Default)]
 pub struct SmartSocket {
-    name: String,
-    is_on: bool,
-    power: f32,
+    pub name: String,
+    pub is_on: bool,
+    pub power: f32,
 }
 
 impl SmartSocket {
@@ -18,14 +18,6 @@ impl SmartSocket {
 
     pub fn switch(&mut self) {
         self.is_on = !self.is_on;
-    }
-
-    pub fn get_power(&self) -> f32 {
-        self.power
-    }
-
-    pub fn set_name(&mut self, name: String) {
-        self.name = name;
     }
 }
 
@@ -55,14 +47,7 @@ mod tests {
     #[test]
     fn test_get_power() {
         let sm: SmartSocket = Default::default();
-        assert_eq!(sm.get_power(), 0.0);
-    }
-
-    #[test]
-    fn test_set_name() {
-        let mut sm: SmartSocket = Default::default();
-        sm.set_name(String::from("test"));
-        assert_eq!(sm.name, String::from("test"));
+        assert_eq!(sm.power, 0.0);
     }
 
     #[test]

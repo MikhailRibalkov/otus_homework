@@ -1,20 +1,20 @@
 use std::fmt;
 
 #[derive(Default, PartialEq)]
-struct SmartThermometer {
-    name: String,
-    temperature: f32,
+pub struct SmartThermometer {
+    pub name: String,
+    pub temperature: f32,
 }
 
 impl SmartThermometer {
-    fn new() -> SmartThermometer {
+    pub fn new() -> SmartThermometer {
         SmartThermometer {
             name: "SmartTermometer".to_string(),
             temperature: 0.0,
         }
     }
 
-    fn set_name(&mut self, name: String) {
+    pub fn set_name(&mut self, name: String) {
         self.name = name;
     }
 }

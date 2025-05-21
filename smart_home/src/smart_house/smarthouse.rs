@@ -15,7 +15,7 @@ impl SmartHouse {
         }
     }
 
-    fn _get_rooms(&self) -> Vec<String> {
+    pub fn get_rooms(&self) -> Vec<String> {
         // Размер возвращаемого массива можно выбрать самостоятельно
         self.rooms.keys().cloned().collect()
     }
